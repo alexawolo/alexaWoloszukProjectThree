@@ -1,0 +1,21 @@
+@media (max-width: 660px){
+    h1 {
+        font-size: 80px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .bubbleContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bubble, .bubble2, .bubble3 {
+        height: 180px;
+        width: 180px;
+    }
+      
+}

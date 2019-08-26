@@ -1,0 +1,88 @@
+@import "setup";
+@import "wrapper";
+
+// VARIABLES:
+$lightColor: #F5FFFA;
+$lightColorTwo: #bdfff1;
+$darkColor: #7FFFD4;
+$fontColor: #00FA9A
+;
+$font: 'Darker Grotesque', sans-serif;
+
+body{
+    background-color: $lightColor;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px 40px;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    color: $fontColor;
+    font-family: $font;
+    font-weight: lighter;
+    font-size: 90px;
+  }
+  
+  p {
+    text-transform: lowercase;
+    color: $fontColor;
+    font-family: $font;
+    font-weight: lighter;
+    font-size: 30px;
+  }
+  
+  .bubbleContainer {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .bubble, .bubble2, .bubble3 {
+    height: 200px;
+    width: 200px;
+    background-color: $darkColor;
+    border: 2px solid $darkColor;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  
+  .bubble:hover, .bubble2:hover, .bubble3:hover {
+    background-color: $lightColorTwo;
+    cursor: pointer;
+  }
+  
+  .dynamic-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 30px;
+  }
+
+  .pop, .pop2, .pop3 {
+    text-transform: uppercase;
+    color: $fontColor;
+    font-family: $font;
+    font-weight: lighter;
+  }
+  
+  .pop {
+    font-size: 30px;
+  }
+  
+  .pop2 {
+    font-size: 50px;
+  }
+  
+  .pop3 {
+    font-size: 70px;
+    
+  }
+
+  @import "queries";
